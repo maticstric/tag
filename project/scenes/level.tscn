@@ -76,6 +76,42 @@ position = Vector2(928, 1048)
 [node name="Tile16" parent="Tiles" instance=ExtResource("1_85xqn")]
 position = Vector2(992, 1048)
 
+[node name="Tile35" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1288, 944)
+
+[node name="Tile36" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1352, 944)
+
+[node name="Tile37" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1416, 944)
+
+[node name="Tile38" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(640, 600)
+
+[node name="Tile39" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(704, 600)
+
+[node name="Tile40" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(768, 600)
+
+[node name="Tile41" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1016, 600)
+
+[node name="Tile46" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(952, 704)
+
+[node name="Tile45" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1016, 704)
+
+[node name="Tile43" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(368, 816)
+
+[node name="Tile44" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(432, 816)
+
+[node name="Tile42" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(304, 816)
+
 [node name="Tile21" parent="Tiles" instance=ExtResource("1_85xqn")]
 position = Vector2(1632, 1048)
 

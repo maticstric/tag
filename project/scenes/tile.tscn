@@ -6,6 +6,7 @@
 size = Vector2(64, 64)
 
 [node name="Tile" type="StaticBody2D"]
+collision_layer = 2
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_cmaui")
