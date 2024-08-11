@@ -3,9 +3,10 @@ extends CharacterBody2D
 const MOVE_SPEED = 800
 const DUCK_MOVE_SPEED = 150
 const DUCK_FRICTION = 0.03
-const JUMP_HEIGHT = 250
+const JUMP_HEIGHT = 300
 const JUMP_TIME_TO_PEAK = 0.35
 const JUMP_TIME_TO_DESCENT = 0.3
+const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 
 @onready var jump_velocity = -(2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK
 @onready var jump_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK ** 2
@@ -13,6 +14,12 @@ const JUMP_TIME_TO_DESCENT = 0.3
 
 
 func _physics_process(delta):
+	
+	
+	print("jumpvel: " + str(jump_velocity))
+	print(jump_gravity)
+	print(fall_gravity)
+	
 	# If you're pressing duck or can't stand up, duck. Otherwise, walk
 	# TODO: Probably add idle?
 	if Input.is_action_pressed("duck") or !can_stand():
@@ -21,23 +28,15 @@ func _physics_process(delta):
 		# If you're slower than DMS, go directly to it. If you're faster, go to it slowly
 		if abs(velocity.x) <= DUCK_MOVE_SPEED:
 			velocity.x = get_input_velocity() * float(DUCK_MOVE_SPEED)
-			pass
 		else:
-			#var tween = create_tween()
-			
-			#print(velocity.x)
-			#tween.tween_property(self, "velocity:x", get_input_velocity() * float(DUCK_MOVE_SPEED), 3).set_trans(Tween.TRANS_QUINT).set_ease(Tween.EASE_OUT)
-			#velocity.x = ease_out_quint(velocity.x, get_input_velocity() * float(DUCK_MOVE_SPEED), 0.5)
 			velocity.x = lerp(velocity.x, get_input_velocity() * float(DUCK_MOVE_SPEED), DUCK_FRICTION)
 	else:
 		$AnimationPlayer.play("walk")
-		velocity.x = get_input_velocity() * MOVE_SPEED
+		velocity.x = get_input_velocity() * MOVE_SPEED	
+	
+	process_jump()
 	
 	velocity.y += get_gravity() * delta
-	
-	if Input.is_action_just_pressed("jump"):
-		if is_on_floor():
-			jump()
 	
 	move_and_slide()
 	
@@ -46,8 +45,18 @@ func duck():
 	velocity.x = lerp(velocity.x, 0.0, 0.03)
 	
 	
+func process_jump():
+	if Input.is_action_just_pressed("jump"):
+		if is_on_floor():
+			jump()
+	
+	
 func jump():
 	velocity.y = jump_velocity
+	
+	
+func ended_jump_early():
+	return (!is_on_floor() and !Input.is_action_pressed("jump") and velocity.y < 0)
 	
 	
 func can_stand():
@@ -67,4 +76,11 @@ func get_input_velocity():
 	
 	
 func get_gravity():
-	return jump_gravity if velocity.y < 0.0 else fall_gravity
+	#return jump_gravity if velocity.y < 0.0 else fall_gravity
+	if velocity.y < 0.0:
+		if ended_jump_early():
+			return fall_gravity * JUMP_END_EARLY_GRAVITY_MODIFIER
+		else:
+			return jump_gravity
+	else:
+		return fall_gravity
