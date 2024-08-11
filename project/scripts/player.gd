@@ -5,9 +5,10 @@ const DUCK_MIN_MOVE_SPEED = 150
 const DUCK_SPEED_BOOST = 500
 const DUCK_FRICTION = 0.05
 const JUMP_HEIGHT = 300
-const JUMP_TIME_TO_PEAK = 0.35
-const JUMP_TIME_TO_DESCENT = 0.3
+const JUMP_TIME_TO_PEAK = 0.35 # in seconds
+const JUMP_TIME_TO_DESCENT = 0.3 # in seconds
 const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
+const JUMP_BUFFER = 100 # in milliseconds
 
 @export var left_action: String
 @export var right_action: String
@@ -20,6 +21,9 @@ const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 @onready var jump_velocity = -(2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK
 @onready var jump_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK ** 2
 @onready var fall_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_DESCENT ** 2
+
+var has_buffered_jump = false
+var time_jump_was_pressed = -1
 
 func _physics_process(delta):
 	
@@ -48,9 +52,15 @@ func _physics_process(delta):
 	
 	
 func process_jump():
+	# Process buffered jumps
+	if is_on_floor() and time_jump_was_pressed > Time.get_ticks_msec() - JUMP_BUFFER:
+		jump()
+	
 	if Input.is_action_just_pressed(jump_action):
 		if is_on_floor():
 			jump()
+		else:
+			time_jump_was_pressed = Time.get_ticks_msec()
 	
 	
 func jump():
