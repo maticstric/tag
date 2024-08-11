@@ -1,8 +1,9 @@
 extends CharacterBody2D
 
 const MOVE_SPEED = 800
-const DUCK_MOVE_SPEED = 150
-const DUCK_FRICTION = 0.03
+const DUCK_MIN_MOVE_SPEED = 150
+const DUCK_SPEED_BOOST = 500
+const DUCK_FRICTION = 0.05
 const JUMP_HEIGHT = 300
 const JUMP_TIME_TO_PEAK = 0.35
 const JUMP_TIME_TO_DESCENT = 0.3
@@ -21,16 +22,20 @@ const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 @onready var fall_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_DESCENT ** 2
 
 func _physics_process(delta):
+	
+	if Input.is_action_just_pressed(duck_action):
+		velocity.x += get_input_velocity() * DUCK_SPEED_BOOST
+	
 	# If you're pressing duck or can't stand up, duck. Otherwise, walk
 	# TODO: Probably add idle?
 	if Input.is_action_pressed(duck_action) or !can_stand():
 		$AnimationPlayer.play(duck_animation)
 		
-		# If you're slower than DMS, go directly to it. If you're faster, go to it slowly
-		if abs(velocity.x) <= DUCK_MOVE_SPEED:
-			velocity.x = get_input_velocity() * float(DUCK_MOVE_SPEED)
+		# If you're slower than DMMS, go directly to it. If you're faster, go to it slowly
+		if abs(velocity.x) <= DUCK_MIN_MOVE_SPEED:
+			velocity.x = get_input_velocity() * float(DUCK_MIN_MOVE_SPEED)
 		else:
-			velocity.x = lerp(velocity.x, get_input_velocity() * float(DUCK_MOVE_SPEED), DUCK_FRICTION)
+			velocity.x = lerp(velocity.x, get_input_velocity() * float(DUCK_MIN_MOVE_SPEED), DUCK_FRICTION)
 	else:
 		$AnimationPlayer.play(walk_animation)
 		velocity.x = get_input_velocity() * MOVE_SPEED	
@@ -40,10 +45,6 @@ func _physics_process(delta):
 	velocity.y += get_gravity() * delta
 	
 	move_and_slide()
-	
-	
-func duck():
-	velocity.x = lerp(velocity.x, 0.0, 0.03)
 	
 	
 func process_jump():
