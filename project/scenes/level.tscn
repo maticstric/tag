@@ -5,8 +5,23 @@
 
 [node name="Level" type="Node2D"]
 
-[node name="Player" parent="." instance=ExtResource("2_haks3")]
-position = Vector2(992, 864)
+[node name="Player1" parent="." instance=ExtResource("2_haks3")]
+position = Vector2(1360, 848)
+left_action = "left1"
+right_action = "right1"
+jump_action = "jump1"
+duck_action = "duck1"
+walk_animation = "walk1"
+duck_animation = "duck1"
+
+[node name="Player2" parent="." instance=ExtResource("2_haks3")]
+position = Vector2(360, 728)
+left_action = "left2"
+right_action = "right2"
+jump_action = "jump2"
+duck_action = "duck2"
+walk_animation = "walk2"
+duck_animation = "duck2"
 
 [node name="Tiles" type="Node2D" parent="."]
 
@@ -77,13 +92,13 @@ position = Vector2(928, 1048)
 position = Vector2(992, 1048)
 
 [node name="Tile35" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(1288, 944)
+position = Vector2(1384, 936)
 
 [node name="Tile36" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(1352, 944)
+position = Vector2(1448, 936)
 
 [node name="Tile37" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(1416, 944)
+position = Vector2(1512, 936)
 
 [node name="Tile38" parent="Tiles" instance=ExtResource("1_85xqn")]
 position = Vector2(640, 600)
@@ -95,13 +110,19 @@ position = Vector2(704, 600)
 position = Vector2(768, 600)
 
 [node name="Tile41" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(1016, 600)
+position = Vector2(1048, 680)
+
+[node name="Tile48" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1048, 616)
 
 [node name="Tile46" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(952, 704)
+position = Vector2(984, 784)
 
 [node name="Tile45" parent="Tiles" instance=ExtResource("1_85xqn")]
-position = Vector2(1016, 704)
+position = Vector2(1048, 784)
+
+[node name="Tile47" parent="Tiles" instance=ExtResource("1_85xqn")]
+position = Vector2(1112, 784)
 
 [node name="Tile43" parent="Tiles" instance=ExtResource("1_85xqn")]
 position = Vector2(368, 816)

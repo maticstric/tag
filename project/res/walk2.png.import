@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xqbo4chxl0a3"
-path="res://.godot/imported/duck.png-bf8406e97e5a2fe0ff8856c59aa154eb.ctex"
+uid="uid://dini6jcmdqbbo"
+path="res://.godot/imported/walk2.png-e2eb24ee20a450e40c0f229ea3748650.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://project/res/duck.png"
-dest_files=["res://.godot/imported/duck.png-bf8406e97e5a2fe0ff8856c59aa154eb.ctex"]
+source_file="res://project/res/walk2.png"
+dest_files=["res://.godot/imported/walk2.png-e2eb24ee20a450e40c0f229ea3748650.ctex"]
 
 [params]
 

@@ -8,22 +8,23 @@ const JUMP_TIME_TO_PEAK = 0.35
 const JUMP_TIME_TO_DESCENT = 0.3
 const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 
+@export var left_action: String
+@export var right_action: String
+@export var jump_action: String
+@export var duck_action: String
+
+@export var walk_animation: String
+@export var duck_animation: String
+
 @onready var jump_velocity = -(2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK
 @onready var jump_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK ** 2
 @onready var fall_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_DESCENT ** 2
 
-
 func _physics_process(delta):
-	
-	
-	print("jumpvel: " + str(jump_velocity))
-	print(jump_gravity)
-	print(fall_gravity)
-	
 	# If you're pressing duck or can't stand up, duck. Otherwise, walk
 	# TODO: Probably add idle?
-	if Input.is_action_pressed("duck") or !can_stand():
-		$AnimationPlayer.play("duck")
+	if Input.is_action_pressed(duck_action) or !can_stand():
+		$AnimationPlayer.play(duck_animation)
 		
 		# If you're slower than DMS, go directly to it. If you're faster, go to it slowly
 		if abs(velocity.x) <= DUCK_MOVE_SPEED:
@@ -31,7 +32,7 @@ func _physics_process(delta):
 		else:
 			velocity.x = lerp(velocity.x, get_input_velocity() * float(DUCK_MOVE_SPEED), DUCK_FRICTION)
 	else:
-		$AnimationPlayer.play("walk")
+		$AnimationPlayer.play(walk_animation)
 		velocity.x = get_input_velocity() * MOVE_SPEED	
 	
 	process_jump()
@@ -46,7 +47,7 @@ func duck():
 	
 	
 func process_jump():
-	if Input.is_action_just_pressed("jump"):
+	if Input.is_action_just_pressed(jump_action):
 		if is_on_floor():
 			jump()
 	
@@ -56,7 +57,7 @@ func jump():
 	
 	
 func ended_jump_early():
-	return (!is_on_floor() and !Input.is_action_pressed("jump") and velocity.y < 0)
+	return (!is_on_floor() and !Input.is_action_pressed(jump_action) and velocity.y < 0)
 	
 	
 func can_stand():
@@ -66,10 +67,10 @@ func can_stand():
 func get_input_velocity():
 	var horizontal = 0.0
 	
-	if Input.is_action_pressed("left"):
+	if Input.is_action_pressed(left_action):
 		horizontal = -1.0
 	
-	if Input.is_action_pressed("right"):
+	if Input.is_action_pressed(right_action):
 		horizontal = 1.0
 		
 	return horizontal
