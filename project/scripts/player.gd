@@ -1,8 +1,8 @@
 extends CharacterBody2D
 
-const MOVE_SPEED = 800
+const MOVE_SPEED = 700
 const DUCK_MIN_MOVE_SPEED = 150
-const DUCK_SPEED_BOOST = 500
+const DUCK_SPEED_BOOST = 400
 const DUCK_FRICTION = 0.05
 const JUMP_HEIGHT = 300
 const JUMP_TIME_TO_PEAK = 0.35 # in seconds
@@ -10,11 +10,13 @@ const JUMP_TIME_TO_DESCENT = 0.3 # in seconds
 const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 const JUMP_BUFFER = 100 # in milliseconds
 
+@export_group("Action Names")
 @export var left_action: String
 @export var right_action: String
 @export var jump_action: String
 @export var duck_action: String
 
+@export_group("Animation Names")
 @export var walk_animation: String
 @export var duck_animation: String
 
