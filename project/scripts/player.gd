@@ -9,6 +9,7 @@ const JUMP_TIME_TO_PEAK = 0.35 # in seconds
 const JUMP_TIME_TO_DESCENT = 0.3 # in seconds
 const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 const JUMP_BUFFER = 100 # in milliseconds
+const COYOTE_TIME_THRESHOLD = 60 # in milliseconds
 
 @export_group("Action Names")
 @export var left_action: String
@@ -26,8 +27,11 @@ const JUMP_BUFFER = 100 # in milliseconds
 
 var has_buffered_jump = false
 var time_jump_was_pressed = -1
+var time_player_was_last_on_floor = -1
 
 func _physics_process(delta):
+	if is_on_floor():
+		time_player_was_last_on_floor = Time.get_ticks_msec()
 	
 	if Input.is_action_just_pressed(duck_action):
 		velocity.x += get_input_velocity() * DUCK_SPEED_BOOST
@@ -59,7 +63,7 @@ func process_jump():
 		jump()
 	
 	if Input.is_action_just_pressed(jump_action):
-		if is_on_floor():
+		if is_on_floor() or time_player_was_last_on_floor + COYOTE_TIME_THRESHOLD > Time.get_ticks_msec():
 			jump()
 		else:
 			time_jump_was_pressed = Time.get_ticks_msec()
