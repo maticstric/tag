@@ -1,6 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://uhmx2vqthflr"]
+[gd_scene load_steps=4 format=3 uid="uid://uhmx2vqthflr"]
 
 [ext_resource type="PackedScene" uid="uid://kjkusecffgt7" path="res://project/scenes/tile.tscn" id="2_7nebs"]
+[ext_resource type="Script" path="res://project/scripts/level_timer.gd" id="3_w3lg2"]
 [ext_resource type="Script" path="res://project/scripts/spawn_manager.gd" id="3_y1sl6"]
 
 [node name="Level" type="Node2D"]
@@ -159,3 +160,20 @@ position = Vector2(1448, 832)
 
 [node name="2" type="Node2D" parent="SpawnPoints"]
 position = Vector2(360, 712)
+
+[node name="Timer" type="Timer" parent="."]
+one_shot = true
+autostart = true
+script = ExtResource("3_w3lg2")
+
+[node name="TimerLabel" type="Label" parent="Timer"]
+offset_left = 640.0
+offset_top = 63.0
+offset_right = 1280.0
+offset_bottom = 256.0
+theme_override_font_sizes/font_size = 141
+text = "30"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="Timer" to="Timer" method="_on_timeout"]
