@@ -71,7 +71,7 @@ func is_near_wall():
 	
 	
 func get_wall_direction():	
-	if $RightWallCheckRayCastœ2D.is_colliding():
+	if $RightWallCheckRayCast2D.is_colliding():
 		return $RightWallCheckRayCast2D.target_position.normalized()
 	elif $LeftWallCheckRayCast2D.is_colliding():
 		return $LeftWallCheckRayCast2D.target_position.normalized()
