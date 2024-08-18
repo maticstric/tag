@@ -55,7 +55,7 @@ func _physics_process(delta):
 	
 	process_jump()
 	
-	velocity.y += get_gravity() * delta
+	velocity.y += _get_gravity() * delta
 	
 	move_and_slide()
 	
@@ -95,7 +95,7 @@ func get_input_velocity():
 	return horizontal
 	
 	
-func get_gravity():
+func _get_gravity():
 	#return jump_gravity if velocity.y < 0.0 else fall_gravity
 	if velocity.y < 0.0:
 		if ended_jump_early():
