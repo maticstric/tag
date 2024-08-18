@@ -11,10 +11,14 @@ config_version=5
 [application]
 
 config/name="tag"
-run/main_scene="res://project/scenes/level.tscn"
+run/main_scene="res://project/scenes/levels/level1.tscn"
 config/features=PackedStringArray("4.2", "Forward Plus")
 run/max_fps=60
 config/icon="res://project/res/icon.svg"
+
+[autoload]
+
+LevelManager="*res://project/scripts/level_manager.gd"
 
 [display]
 

@@ -12,20 +12,20 @@ const JUMP_END_EARLY_GRAVITY_MODIFIER = 2
 const JUMP_BUFFER = 100 # in milliseconds
 const COYOTE_TIME_THRESHOLD = 60 # in milliseconds
 
-@export_group("Action Names")
-@export var left_action: String
-@export var right_action: String
-@export var jump_action: String
-@export var duck_action: String
+@onready var left_action = "left" + str(player_num)
+@onready var right_action = "right" + str(player_num)
+@onready var jump_action = "jump" + str(player_num)
+@onready var duck_action = "duck" + str(player_num)
 
-@export_group("Animation Names")
-@export var walk_animation: String
-@export var duck_animation: String
+@onready var walk_animation = "walk" + str(player_num)
+@onready var duck_animation = "duck" + str(player_num)
 
 @onready var jump_velocity = -(2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK
 @onready var jump_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK ** 2
 @onready var fall_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_DESCENT ** 2
 
+var player_num = 1
+var is_it = false
 var has_buffered_jump = false
 var time_jump_was_pressed = -1
 var time_player_was_last_on_floor = -1
@@ -104,3 +104,8 @@ func get_gravity():
 			return jump_gravity
 	else:
 		return fall_gravity
+
+
+func _on_tag_check_area_2d_area_entered(area):
+	if area.is_in_group("player") and is_it:
+		LevelManager.load_new_level()
