@@ -66,15 +66,21 @@ func _physics_process(delta):
 	move_and_slide()
 	
 	
+func is_near_wall():
+	return $RightWallCheckRayCast2D.is_colliding() or $LeftWallCheckRayCast2D.is_colliding()
+	
+	
+func get_wall_direction():	
+	if $RightWallCheckRayCastœ2D.is_colliding():
+		return $RightWallCheckRayCast2D.target_position.normalized()
+	elif $LeftWallCheckRayCast2D.is_colliding():
+		return $LeftWallCheckRayCast2D.target_position.normalized()
+	
+	
 func process_wall_jump():
-	if !is_on_wall() or is_on_floor(): return
-	
-	var wall_normal = get_wall_normal()
-	
-	if Input.is_action_just_pressed(jump_action) or time_jump_was_pressed > Time.get_ticks_msec() - JUMP_BUFFER:
-		if wall_normal == Vector2.LEFT or wall_normal == Vector2.RIGHT:
-			jump()
-			velocity.x = wall_normal.x * WALL_JUMP_SPEED
+	if Input.is_action_just_pressed(jump_action) and !is_on_floor() and is_near_wall():
+		var wall_normal = get_wall_direction() * -1
+		wall_jump(wall_normal)
 	
 	
 func process_jump():
@@ -91,6 +97,11 @@ func process_jump():
 	
 func jump():
 	velocity.y = jump_velocity
+	
+	
+func wall_jump(wall_normal):
+	velocity.y = jump_velocity
+	velocity.x = wall_normal.x * WALL_JUMP_SPEED
 	
 	
 func ended_jump_early():
@@ -121,8 +132,11 @@ func _get_gravity():
 			return jump_gravity
 	else:
 		return fall_gravity
-
-
+	
+	
 func _on_tag_check_area_2d_area_entered(area):
 	if area.is_in_group("player") and is_it:
 		LevelManager.load_new_level()
+	
+
+	
