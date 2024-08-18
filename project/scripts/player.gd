@@ -1,7 +1,9 @@
 extends CharacterBody2D
 
 const MOVE_SPEED = 700
+const WALL_JUMP_SPEED = 1000
 const MOVE_ACCELERATION = 170
+const IN_AIR_MOVE_ACCELERATION = 100
 const DUCK_MIN_MOVE_SPEED = 150
 const DUCK_SPEED_BOOST = 400
 const DUCK_FRICTION = 0.05
@@ -51,13 +53,28 @@ func _physics_process(delta):
 			velocity.x = lerp(velocity.x, input_velocity * float(DUCK_MIN_MOVE_SPEED), DUCK_FRICTION)
 	else:
 		$AnimationPlayer.play(walk_animation)
-		velocity.x = move_toward(velocity.x, input_velocity * MOVE_SPEED, MOVE_ACCELERATION)
+		if is_on_floor():
+			velocity.x = move_toward(velocity.x, input_velocity * MOVE_SPEED, MOVE_ACCELERATION)
+		else:
+			velocity.x = move_toward(velocity.x, input_velocity * MOVE_SPEED, IN_AIR_MOVE_ACCELERATION)
 	
+	process_wall_jump()
 	process_jump()
 	
 	velocity.y += _get_gravity() * delta
 	
 	move_and_slide()
+	
+	
+func process_wall_jump():
+	if !is_on_wall() or is_on_floor(): return
+	
+	var wall_normal = get_wall_normal()
+	
+	if Input.is_action_just_pressed(jump_action) or time_jump_was_pressed > Time.get_ticks_msec() - JUMP_BUFFER:
+		if wall_normal == Vector2.LEFT or wall_normal == Vector2.RIGHT:
+			jump()
+			velocity.x = wall_normal.x * WALL_JUMP_SPEED
 	
 	
 func process_jump():
