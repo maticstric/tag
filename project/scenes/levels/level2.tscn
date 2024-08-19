@@ -391,10 +391,10 @@ position = Vector2(1568, 1048)
 script = ExtResource("2_tchpu")
 
 [node name="1" type="Node2D" parent="SpawnPoints"]
-position = Vector2(1496, 928)
+position = Vector2(408, 944)
 
 [node name="2" type="Node2D" parent="SpawnPoints"]
-position = Vector2(408, 928)
+position = Vector2(1496, 944)
 
 [node name="LevelTimer" type="Timer" parent="."]
 one_shot = true
@@ -406,7 +406,7 @@ offset_top = 63.0
 offset_right = 1280.0
 offset_bottom = 256.0
 theme_override_font_sizes/font_size = 141
-text = "30"
+text = "20"
 horizontal_alignment = 1
 vertical_alignment = 1
 metadata/_edit_use_anchors_ = true
@@ -450,7 +450,7 @@ offset_bottom = 208.0
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_font_sizes/font_size = 131
-text = "3..."
+text = "3"
 horizontal_alignment = 1
 vertical_alignment = 1
 

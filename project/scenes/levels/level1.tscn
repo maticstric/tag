@@ -157,10 +157,10 @@ position = Vector2(1568, 1048)
 script = ExtResource("3_y1sl6")
 
 [node name="1" type="Node2D" parent="SpawnPoints"]
-position = Vector2(1448, 832)
+position = Vector2(360, 712)
 
 [node name="2" type="Node2D" parent="SpawnPoints"]
-position = Vector2(360, 712)
+position = Vector2(1448, 832)
 
 [node name="LevelTimer" type="Timer" parent="."]
 one_shot = true
