@@ -139,7 +139,7 @@ func _get_gravity():
 	
 func _on_tag_check_area_2d_area_entered(area):
 	if area.is_in_group("player") and is_it:
-		GameManager.next_level()
+		GameManager.next_level(GameManager.TAGGED)
 	
 
 	

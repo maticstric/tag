@@ -18,9 +18,12 @@ func _process(delta):
 	var level_timer_time_left = str(ceil($LevelTimer.time_left * LEVEL_VISUAL_TIMER/LEVEL_REAL_TIMER))
 	$LevelTimer/LevelTimerLabel.text = level_timer_time_left
 	
+	var score_text = str(GameManager.p1_score) + " - " + str(GameManager.p2_score)
+	$ScoreColorRect/ScoreLabel.text = score_text
+	
 	
 func _on_level_timer_timeout():
-	GameManager.next_level()
+	GameManager.next_level(GameManager.TIME_RAN_OUT)
 
 
 func _on_score_timer_timeout() -> void:

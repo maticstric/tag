@@ -1,8 +1,16 @@
 extends Node
 
+enum { TIME_RAN_OUT, TAGGED }
+
+const SCORE_IF_TAG = 1
+const SCORE_IF_EVADE = 1
+
 var current_it
 var curr_level = 0
 var all_levels_seen = false
+
+var p1_score = 0
+var p2_score = 0
 
 @onready var num_levels = DirAccess.open("res://project/scenes/levels/").get_files().size()
 
@@ -18,8 +26,20 @@ func start_game():
 	load_new_level()
 	
 	
-func next_level():
-	switch_who_is_it()
+func next_level(reason):
+	if reason == TAGGED:
+		if current_it == 1:
+			p1_score += SCORE_IF_TAG
+		else:
+			p2_score += SCORE_IF_TAG
+		
+		switch_who_is_it()
+	else:
+		if current_it == 1:
+			p2_score += SCORE_IF_EVADE
+		else:
+			p1_score += SCORE_IF_EVADE
+	
 	load_new_level()
 	
 	
