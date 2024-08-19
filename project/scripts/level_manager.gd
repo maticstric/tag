@@ -1,24 +1,33 @@
 extends Node
 
-var curr_level = 0
-var all_levels_seen = false
+const SCORE_REAL_TIMER = 1.8
+const SCORE_VISUAL_TIMER = 3
+const LEVEL_REAL_TIMER = 15
+const LEVEL_VISUAL_TIMER = 20
 
-@onready var num_levels = DirAccess.open("res://project/scenes/levels/").get_files().size()
-
-
-func load_new_level():
-	curr_level += 1
+func _ready():
+	$ScoreColorRect/ScoreTimer.start(SCORE_REAL_TIMER)
 	
-	GameManager.switch_who_is_it()
 	
-	if !all_levels_seen:
-		get_tree().call_deferred("change_scene_to_file", "res://project/scenes/levels/level" + str(curr_level) + ".tscn")
-		
-		if curr_level == num_levels:
-			all_levels_seen = true
-			
-	else:
-		var random_level = randi_range(1, num_levels)
-		curr_level = random_level
-		
-		get_tree().call_deferred("change_scene_to_file", "res://project/scenes/levels/level" + str(random_level) + ".tscn")
+func _process(delta):
+	# I want the timer to appear to be 3 seconds long, but actually be shorter (LEVEL_START_REAL_TIMER)
+	var score_timer_time_left = str(ceil($ScoreColorRect/ScoreTimer.time_left * SCORE_VISUAL_TIMER/SCORE_REAL_TIMER))
+	$ScoreColorRect/ScoreTimer/ScoreTimerLabel.text = score_timer_time_left
+	
+	# Again, want timer to appear to be one value
+	var level_timer_time_left = str(ceil($LevelTimer.time_left * LEVEL_VISUAL_TIMER/LEVEL_REAL_TIMER))
+	$LevelTimer/LevelTimerLabel.text = level_timer_time_left
+	
+	
+func _on_level_timer_timeout():
+	GameManager.next_level()
+
+
+func _on_score_timer_timeout() -> void:
+	$ScoreColorRect.set_visible(false)
+	$ScoreColorRect/ScoreTimer/ScoreTimerLabel.set_visible(false)
+	
+	$SpawnPoints/Player1.movement_enabled = true
+	$SpawnPoints/Player2.movement_enabled = true
+	$LevelTimer/LevelTimerLabel.set_visible(true)
+	$LevelTimer.start(LEVEL_REAL_TIMER)

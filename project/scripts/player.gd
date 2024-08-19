@@ -5,7 +5,7 @@ const WALL_JUMP_SPEED = 1000
 const MOVE_ACCELERATION = 170
 const IN_AIR_MOVE_ACCELERATION = 100
 const DUCK_MIN_MOVE_SPEED = 150
-const DUCK_SPEED_BOOST = 400
+const DUCK_SPEED_BOOST = 500
 const DUCK_FRICTION = 0.05
 const JUMP_HEIGHT = 300
 const JUMP_TIME_TO_PEAK = 0.35 # in seconds
@@ -31,6 +31,8 @@ var is_it = false
 var has_buffered_jump = false
 var time_jump_was_pressed = -1
 var time_player_was_last_on_floor = -1
+var movement_enabled = false
+
 
 func _physics_process(delta):
 	var input_velocity = get_input_velocity()
@@ -63,7 +65,8 @@ func _physics_process(delta):
 	
 	velocity.y += _get_gravity() * delta
 	
-	move_and_slide()
+	if movement_enabled:
+		move_and_slide()
 	
 	
 func is_near_wall():
@@ -136,7 +139,7 @@ func _get_gravity():
 	
 func _on_tag_check_area_2d_area_entered(area):
 	if area.is_in_group("player") and is_it:
-		LevelManager.load_new_level()
+		GameManager.next_level()
 	
 
 	

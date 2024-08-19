@@ -18,7 +18,6 @@ config/icon="res://project/res/icon.svg"
 
 [autoload]
 
-LevelManager="*res://project/scripts/level_manager.gd"
 GameManager="*res://project/scripts/game_manager.gd"
 
 [display]
