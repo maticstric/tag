@@ -33,6 +33,12 @@ var time_jump_was_pressed = -1
 var time_player_was_last_on_floor = -1
 var movement_enabled = false
 
+func _ready():
+	if is_it:
+		$Sprite2D.material = ShaderMaterial.new()
+		$Sprite2D.material.shader = load("res://project/shaders/outline.gdshader")
+
+
 
 func _physics_process(delta):
 	var input_velocity = get_input_velocity()

@@ -267,6 +267,12 @@ position = Vector2(768, 600)
 [node name="Tile114" parent="Tiles" instance=ExtResource("2_7nebs")]
 position = Vector2(1376, 480)
 
+[node name="Tile135" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1312, 480)
+
+[node name="Tile136" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1248, 480)
+
 [node name="Tile115" parent="Tiles" instance=ExtResource("2_7nebs")]
 position = Vector2(1440, 480)
 
@@ -319,6 +325,9 @@ position = Vector2(1760, 288)
 position = Vector2(1048, 680)
 
 [node name="Tile48" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1048, 616)
+
+[node name="Tile134" parent="Tiles" instance=ExtResource("2_7nebs")]
 position = Vector2(1048, 616)
 
 [node name="Tile130" parent="Tiles" instance=ExtResource("2_7nebs")]
