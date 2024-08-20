@@ -37,9 +37,8 @@ func _ready():
 	if is_it:
 		$Sprite2D.material = ShaderMaterial.new()
 		$Sprite2D.material.shader = load("res://project/shaders/outline.gdshader")
-
-
-
+	
+	
 func _physics_process(delta):
 	var input_velocity = get_input_velocity()
 	
