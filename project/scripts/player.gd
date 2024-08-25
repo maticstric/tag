@@ -1,6 +1,6 @@
 extends CharacterBody2D
 
-const MOVE_SPEED = 700
+var MOVE_SPEED = 700 # var so I can change it in play_again_screen
 const WALL_JUMP_SPEED = 1000
 const MOVE_ACCELERATION = 170
 const IN_AIR_MOVE_ACCELERATION = 100
@@ -26,17 +26,20 @@ const COYOTE_TIME_THRESHOLD = 60 # in milliseconds
 @onready var jump_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_PEAK ** 2
 @onready var fall_gravity = -(-2.0 * JUMP_HEIGHT) / JUMP_TIME_TO_DESCENT ** 2
 
-var player_num = 1
+@export var player_num = 1
 var is_it = false
 var has_buffered_jump = false
 var time_jump_was_pressed = -1
 var time_player_was_last_on_floor = -1
-var movement_enabled = false
+@export var movement_enabled = false
 
 func _ready():
 	if is_it:
 		$Sprite2D.material = ShaderMaterial.new()
+		$Sprite2D.material.set_shader_parameter("pattern", 1)
 		$Sprite2D.material.shader = load("res://project/shaders/outline.gdshader")
+		
+		$ITLabel.visible = true
 	
 	
 func _physics_process(delta):
@@ -145,6 +148,3 @@ func _get_gravity():
 func _on_tag_check_area_2d_area_entered(area):
 	if area.is_in_group("player") and is_it:
 		GameManager.next_level(GameManager.TAGGED)
-	
-
-	

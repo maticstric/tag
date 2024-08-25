@@ -1,10 +1,12 @@
-[gd_scene load_steps=15 format=3 uid="uid://bg3sk50oppws8"]
+[gd_scene load_steps=17 format=3 uid="uid://bg3sk50oppws8"]
 
 [ext_resource type="Script" path="res://project/scripts/player.gd" id="1_0jb5o"]
 [ext_resource type="Texture2D" uid="uid://nlyltw2kxaba" path="res://project/res/walk1.png" id="2_0i8rs"]
 [ext_resource type="Texture2D" uid="uid://cij1ghdkvybqk" path="res://project/res/duck1.png" id="2_1o3rs"]
 [ext_resource type="Texture2D" uid="uid://dini6jcmdqbbo" path="res://project/res/walk2.png" id="4_7575x"]
 [ext_resource type="Texture2D" uid="uid://cudmn73jooloe" path="res://project/res/duck2.png" id="5_pguy0"]
+[ext_resource type="Texture2D" uid="uid://dn3wn1jktpliu" path="res://project/res/arrow.png" id="6_gv4bq"]
+[ext_resource type="FontFile" uid="uid://22bgq02otxnp" path="res://project/res/fonts/BigSpace-rPKx.ttf" id="7_v8alt"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dfblk"]
 size = Vector2(32, 64)
@@ -199,16 +201,16 @@ shape = SubResource("RectangleShape2D_p2r2a")
 
 [node name="WalkingCollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_svil2")
+disabled = true
 
 [node name="DuckingCollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 16)
 shape = SubResource("RectangleShape2D_yqgn3")
-disabled = true
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 texture_filter = 1
 scale = Vector2(4, 4)
-texture = ExtResource("2_0i8rs")
+texture = ExtResource("2_1o3rs")
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="."]
 libraries = {
@@ -222,5 +224,28 @@ collision_mask = 2
 [node name="LeftWallCheckRayCast2D" type="RayCast2D" parent="."]
 target_position = Vector2(-30, 0)
 collision_mask = 2
+
+[node name="ITLabel" type="Node2D" parent="."]
+visible = false
+
+[node name="TextureRect" type="TextureRect" parent="ITLabel"]
+offset_left = 32.0
+offset_top = -104.0
+offset_right = 101.0
+offset_bottom = -40.0
+rotation = 1.5708
+texture = ExtResource("6_gv4bq")
+expand_mode = 1
+
+[node name="Label" type="Label" parent="ITLabel"]
+offset_left = -104.0
+offset_top = -152.0
+offset_right = 104.0
+offset_bottom = -88.0
+theme_override_fonts/font = ExtResource("7_v8alt")
+theme_override_font_sizes/font_size = 45
+text = "you're it!"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [connection signal="area_entered" from="TagCheckArea2D" to="." method="_on_tag_check_area_2d_area_entered"]

@@ -1,0 +1,17 @@
+[gd_scene load_steps=3 format=3 uid="uid://bckwkpsx20a5h"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_cmaui"]
+size = Vector2(64, 64)
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_5mmyu"]
+
+[node name="Tile" type="StaticBody2D"]
+collision_layer = 2
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_cmaui")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture_filter = 1
+position = Vector2(9.53674e-07, 9.53674e-07)
+texture = SubResource("CompressedTexture2D_5mmyu")

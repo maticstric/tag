@@ -1,6 +1,6 @@
 [gd_scene load_steps=3 format=3 uid="uid://kjkusecffgt7"]
 
-[ext_resource type="Texture2D" uid="uid://bnrknl18c06go" path="res://project/res/icon.svg" id="1_3vdwk"]
+[ext_resource type="Texture2D" uid="uid://bhb6c702u7h0o" path="res://project/res/tile.png" id="1_j6w1v"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_cmaui"]
 size = Vector2(64, 64)
@@ -12,5 +12,6 @@ collision_layer = 2
 shape = SubResource("RectangleShape2D_cmaui")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
-scale = Vector2(0.5, 0.5)
-texture = ExtResource("1_3vdwk")
+texture_filter = 1
+position = Vector2(9.53674e-07, 9.53674e-07)
+texture = ExtResource("1_j6w1v")

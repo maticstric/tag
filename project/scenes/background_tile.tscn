@@ -1,0 +1,8 @@
+[gd_scene load_steps=2 format=3 uid="uid://bvbl8fmljnq00"]
+
+[ext_resource type="Texture2D" uid="uid://blqn0dopes6kg" path="res://project/res/background_tile.png" id="1_adu6r"]
+
+[node name="Sprite2D" type="Sprite2D"]
+texture_filter = 1
+position = Vector2(9.53674e-07, 9.53674e-07)
+texture = ExtResource("1_adu6r")

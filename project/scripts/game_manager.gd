@@ -1,9 +1,11 @@
 extends Node
 
-enum { TIME_RAN_OUT, TAGGED }
+enum { TIME_RAN_OUT, TAGGED, PLAY_AGAIN }
 
 const SCORE_IF_TAG = 1
 const SCORE_IF_EVADE = 1
+
+const MAX_SCORE = 4
 
 var current_it
 var curr_level = 0
@@ -26,7 +28,24 @@ func start_game():
 	load_new_level()
 	
 	
+func back_to_main_menu():
+	p1_score = 0
+	p2_score = 0
+	curr_level = 0
+	current_it = 0
+	all_levels_seen = false
+	
+	get_tree().call_deferred("change_scene_to_file", "res://project/scenes/main_menu.tscn")
+	
+	
+func play_again_screen():
+	get_tree().call_deferred("change_scene_to_file", "res://project/scenes/play_again_screen.tscn")
+	
 func next_level(reason):
+	if p1_score == MAX_SCORE or p2_score == MAX_SCORE:
+		back_to_main_menu()
+		return
+		
 	if reason == TAGGED:
 		if current_it == 1:
 			p1_score += SCORE_IF_TAG
@@ -40,7 +59,12 @@ func next_level(reason):
 		else:
 			p1_score += SCORE_IF_EVADE
 	
-	load_new_level()
+	if p1_score == MAX_SCORE or p2_score == MAX_SCORE:
+		current_it = 1 if p1_score == MAX_SCORE else 2
+		
+		play_again_screen()
+	else:
+		load_new_level()
 	
 	
 func load_new_level():
