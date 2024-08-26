@@ -49,6 +49,7 @@ func _physics_process(delta):
 		time_player_was_last_on_floor = Time.get_ticks_msec()
 	
 	if Input.is_action_just_pressed(duck_action) and can_stand():
+		if input_velocity != 0: $DuckSFX.play()
 		velocity.x += input_velocity * DUCK_SPEED_BOOST
 	
 	# If you're pressing duck or can't stand up, duck. Otherwise, walk
@@ -107,10 +108,12 @@ func process_jump():
 	
 	
 func jump():
+	$JumpSFX.play()
 	velocity.y = jump_velocity
 	
 	
 func wall_jump(wall_normal):
+	$JumpSFX.play()
 	velocity.y = jump_velocity
 	velocity.x = wall_normal.x * WALL_JUMP_SPEED
 	

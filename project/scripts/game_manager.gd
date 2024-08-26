@@ -5,7 +5,7 @@ enum { TIME_RAN_OUT, TAGGED, PLAY_AGAIN }
 const SCORE_IF_TAG = 1
 const SCORE_IF_EVADE = 1
 
-const MAX_SCORE = 4
+const MAX_SCORE = 10
 
 var current_it
 var curr_level = 0

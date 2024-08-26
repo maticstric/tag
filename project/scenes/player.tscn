@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=3 uid="uid://bg3sk50oppws8"]
+[gd_scene load_steps=19 format=3 uid="uid://bg3sk50oppws8"]
 
 [ext_resource type="Script" path="res://project/scripts/player.gd" id="1_0jb5o"]
 [ext_resource type="Texture2D" uid="uid://nlyltw2kxaba" path="res://project/res/walk1.png" id="2_0i8rs"]
@@ -7,6 +7,8 @@
 [ext_resource type="Texture2D" uid="uid://cudmn73jooloe" path="res://project/res/duck2.png" id="5_pguy0"]
 [ext_resource type="Texture2D" uid="uid://dn3wn1jktpliu" path="res://project/res/arrow.png" id="6_gv4bq"]
 [ext_resource type="FontFile" uid="uid://22bgq02otxnp" path="res://project/res/fonts/BigSpace-rPKx.ttf" id="7_v8alt"]
+[ext_resource type="AudioStream" uid="uid://nu6u2e47g2cf" path="res://project/res/audio/jump.wav" id="8_aywqr"]
+[ext_resource type="AudioStream" uid="uid://b53itpitdhrp1" path="res://project/res/audio/duck.wav" id="10_48x4u"]
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_dfblk"]
 size = Vector2(32, 64)
@@ -247,5 +249,13 @@ theme_override_font_sizes/font_size = 45
 text = "you're it!"
 horizontal_alignment = 1
 vertical_alignment = 1
+
+[node name="JumpSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("8_aywqr")
+volume_db = -12.0
+
+[node name="DuckSFX" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("10_48x4u")
+volume_db = -20.0
 
 [connection signal="area_entered" from="TagCheckArea2D" to="." method="_on_tag_check_area_2d_area_entered"]
