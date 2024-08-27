@@ -19,6 +19,7 @@ config/icon="res://project/res/icon.svg"
 [autoload]
 
 GameManager="*res://project/scripts/game_manager.gd"
+MainMusic="*res://project/scenes/main_music.tscn"
 
 [display]
 
@@ -85,3 +86,7 @@ duck2={
 
 2d_physics/layer_1="player"
 2d_physics/layer_2="environment"
+
+[rendering]
+
+textures/vram_compression/import_etc2_astc=true

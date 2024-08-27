@@ -1,0 +1,2191 @@
+[gd_scene load_steps=6 format=3 uid="uid://ldj3nt8mgaq4"]
+
+[ext_resource type="Script" path="res://project/scripts/level_manager.gd" id="1_llw0g"]
+[ext_resource type="PackedScene" uid="uid://kjkusecffgt7" path="res://project/scenes/tile.tscn" id="2_7nebs"]
+[ext_resource type="PackedScene" uid="uid://bvbl8fmljnq00" path="res://project/scenes/background_tile.tscn" id="2_dd0xh"]
+[ext_resource type="Script" path="res://project/scripts/spawn_manager.gd" id="3_y1sl6"]
+[ext_resource type="FontFile" uid="uid://22bgq02otxnp" path="res://project/res/fonts/BigSpace-rPKx.ttf" id="4_w3fw5"]
+
+[node name="Level" type="Node2D"]
+script = ExtResource("1_llw0g")
+
+[node name="BackgroundTiles" type="Node2D" parent="."]
+
+[node name="Sprite2D" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 984)
+
+[node name="Sprite2D557" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 1048)
+
+[node name="Sprite2D2" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 984)
+
+[node name="Sprite2D3" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 984)
+
+[node name="Sprite2D4" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 984)
+
+[node name="Sprite2D5" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 984)
+
+[node name="Sprite2D6" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 984)
+
+[node name="Sprite2D7" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 984)
+
+[node name="Sprite2D8" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 984)
+
+[node name="Sprite2D9" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 984)
+
+[node name="Sprite2D10" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 984)
+
+[node name="Sprite2D11" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 984)
+
+[node name="Sprite2D12" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 984)
+
+[node name="Sprite2D13" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 984)
+
+[node name="Sprite2D14" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 984)
+
+[node name="Sprite2D15" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 984)
+
+[node name="Sprite2D16" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 984)
+
+[node name="Sprite2D17" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 984)
+
+[node name="Sprite2D18" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 984)
+
+[node name="Sprite2D19" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 984)
+
+[node name="Sprite2D20" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 984)
+
+[node name="Sprite2D21" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 984)
+
+[node name="Sprite2D22" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 984)
+
+[node name="Sprite2D23" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 984)
+
+[node name="Sprite2D24" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 984)
+
+[node name="Sprite2D25" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 984)
+
+[node name="Sprite2D26" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 984)
+
+[node name="Sprite2D27" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 984)
+
+[node name="Sprite2D28" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 984)
+
+[node name="Sprite2D29" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 984)
+
+[node name="Sprite2D30" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 984)
+
+[node name="Sprite2D31" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 984)
+
+[node name="Sprite2D556" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 1048)
+
+[node name="Sprite2D32" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 920)
+
+[node name="Sprite2D33" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 920)
+
+[node name="Sprite2D34" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 920)
+
+[node name="Sprite2D35" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 920)
+
+[node name="Sprite2D36" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 920)
+
+[node name="Sprite2D37" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 920)
+
+[node name="Sprite2D38" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 920)
+
+[node name="Sprite2D39" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 920)
+
+[node name="Sprite2D40" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 920)
+
+[node name="Sprite2D41" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 920)
+
+[node name="Sprite2D42" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 920)
+
+[node name="Sprite2D43" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 920)
+
+[node name="Sprite2D44" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 920)
+
+[node name="Sprite2D45" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 920)
+
+[node name="Sprite2D46" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 920)
+
+[node name="Sprite2D47" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 920)
+
+[node name="Sprite2D48" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 920)
+
+[node name="Sprite2D49" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 920)
+
+[node name="Sprite2D50" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 920)
+
+[node name="Sprite2D51" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 920)
+
+[node name="Sprite2D52" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 920)
+
+[node name="Sprite2D53" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 920)
+
+[node name="Sprite2D54" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 920)
+
+[node name="Sprite2D55" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 920)
+
+[node name="Sprite2D56" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 920)
+
+[node name="Sprite2D57" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 920)
+
+[node name="Sprite2D58" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 920)
+
+[node name="Sprite2D59" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 920)
+
+[node name="Sprite2D60" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 920)
+
+[node name="Sprite2D61" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 920)
+
+[node name="Sprite2D62" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 920)
+
+[node name="Sprite2D63" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 856)
+
+[node name="Sprite2D64" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 856)
+
+[node name="Sprite2D65" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 856)
+
+[node name="Sprite2D66" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 856)
+
+[node name="Sprite2D67" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 856)
+
+[node name="Sprite2D68" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 856)
+
+[node name="Sprite2D69" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 856)
+
+[node name="Sprite2D70" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 856)
+
+[node name="Sprite2D71" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 856)
+
+[node name="Sprite2D72" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 856)
+
+[node name="Sprite2D73" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 856)
+
+[node name="Sprite2D74" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 856)
+
+[node name="Sprite2D75" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 856)
+
+[node name="Sprite2D76" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 856)
+
+[node name="Sprite2D77" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 856)
+
+[node name="Sprite2D78" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 856)
+
+[node name="Sprite2D79" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 856)
+
+[node name="Sprite2D80" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 856)
+
+[node name="Sprite2D81" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 856)
+
+[node name="Sprite2D82" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 856)
+
+[node name="Sprite2D83" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 856)
+
+[node name="Sprite2D84" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 856)
+
+[node name="Sprite2D85" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 856)
+
+[node name="Sprite2D86" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 856)
+
+[node name="Sprite2D87" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 856)
+
+[node name="Sprite2D88" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 856)
+
+[node name="Sprite2D89" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 856)
+
+[node name="Sprite2D90" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 856)
+
+[node name="Sprite2D91" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 856)
+
+[node name="Sprite2D92" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 856)
+
+[node name="Sprite2D93" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 856)
+
+[node name="Sprite2D94" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 792)
+
+[node name="Sprite2D95" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 792)
+
+[node name="Sprite2D96" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 792)
+
+[node name="Sprite2D97" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 792)
+
+[node name="Sprite2D98" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 792)
+
+[node name="Sprite2D99" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 792)
+
+[node name="Sprite2D100" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 792)
+
+[node name="Sprite2D101" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 792)
+
+[node name="Sprite2D102" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 792)
+
+[node name="Sprite2D103" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 792)
+
+[node name="Sprite2D104" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 792)
+
+[node name="Sprite2D105" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 792)
+
+[node name="Sprite2D106" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 792)
+
+[node name="Sprite2D107" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 792)
+
+[node name="Sprite2D108" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 792)
+
+[node name="Sprite2D109" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 792)
+
+[node name="Sprite2D110" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 792)
+
+[node name="Sprite2D111" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 792)
+
+[node name="Sprite2D112" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 792)
+
+[node name="Sprite2D113" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 792)
+
+[node name="Sprite2D114" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 792)
+
+[node name="Sprite2D115" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 792)
+
+[node name="Sprite2D116" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 792)
+
+[node name="Sprite2D117" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 792)
+
+[node name="Sprite2D118" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 792)
+
+[node name="Sprite2D119" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 792)
+
+[node name="Sprite2D120" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 792)
+
+[node name="Sprite2D121" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 792)
+
+[node name="Sprite2D122" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 792)
+
+[node name="Sprite2D123" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 792)
+
+[node name="Sprite2D124" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 792)
+
+[node name="Sprite2D125" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 728)
+
+[node name="Sprite2D126" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 728)
+
+[node name="Sprite2D127" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 728)
+
+[node name="Sprite2D128" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 728)
+
+[node name="Sprite2D129" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 728)
+
+[node name="Sprite2D130" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 728)
+
+[node name="Sprite2D131" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 728)
+
+[node name="Sprite2D132" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 728)
+
+[node name="Sprite2D133" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 728)
+
+[node name="Sprite2D134" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 728)
+
+[node name="Sprite2D135" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 728)
+
+[node name="Sprite2D136" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 728)
+
+[node name="Sprite2D137" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 728)
+
+[node name="Sprite2D138" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 728)
+
+[node name="Sprite2D139" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 728)
+
+[node name="Sprite2D140" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 728)
+
+[node name="Sprite2D141" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 728)
+
+[node name="Sprite2D142" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 728)
+
+[node name="Sprite2D143" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 728)
+
+[node name="Sprite2D144" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 728)
+
+[node name="Sprite2D145" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 728)
+
+[node name="Sprite2D146" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 728)
+
+[node name="Sprite2D147" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 728)
+
+[node name="Sprite2D148" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 728)
+
+[node name="Sprite2D149" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 728)
+
+[node name="Sprite2D150" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 728)
+
+[node name="Sprite2D151" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 728)
+
+[node name="Sprite2D152" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 728)
+
+[node name="Sprite2D153" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 728)
+
+[node name="Sprite2D154" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 728)
+
+[node name="Sprite2D155" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 728)
+
+[node name="Sprite2D156" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 664)
+
+[node name="Sprite2D157" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 664)
+
+[node name="Sprite2D158" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 664)
+
+[node name="Sprite2D159" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 664)
+
+[node name="Sprite2D160" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 664)
+
+[node name="Sprite2D161" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 664)
+
+[node name="Sprite2D162" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 664)
+
+[node name="Sprite2D163" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 664)
+
+[node name="Sprite2D164" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 664)
+
+[node name="Sprite2D165" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 664)
+
+[node name="Sprite2D166" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 664)
+
+[node name="Sprite2D167" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 664)
+
+[node name="Sprite2D168" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 664)
+
+[node name="Sprite2D169" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 664)
+
+[node name="Sprite2D170" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 664)
+
+[node name="Sprite2D171" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 664)
+
+[node name="Sprite2D172" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 664)
+
+[node name="Sprite2D173" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 664)
+
+[node name="Sprite2D174" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 664)
+
+[node name="Sprite2D175" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 664)
+
+[node name="Sprite2D176" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 664)
+
+[node name="Sprite2D177" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 664)
+
+[node name="Sprite2D178" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 664)
+
+[node name="Sprite2D179" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 664)
+
+[node name="Sprite2D180" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 664)
+
+[node name="Sprite2D181" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 664)
+
+[node name="Sprite2D182" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 664)
+
+[node name="Sprite2D183" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 664)
+
+[node name="Sprite2D184" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 664)
+
+[node name="Sprite2D185" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 664)
+
+[node name="Sprite2D186" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 664)
+
+[node name="Sprite2D187" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 600)
+
+[node name="Sprite2D188" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 600)
+
+[node name="Sprite2D189" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 600)
+
+[node name="Sprite2D190" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 600)
+
+[node name="Sprite2D191" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 600)
+
+[node name="Sprite2D192" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 600)
+
+[node name="Sprite2D193" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 600)
+
+[node name="Sprite2D194" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 600)
+
+[node name="Sprite2D195" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 600)
+
+[node name="Sprite2D196" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 600)
+
+[node name="Sprite2D197" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 600)
+
+[node name="Sprite2D198" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 600)
+
+[node name="Sprite2D199" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 600)
+
+[node name="Sprite2D200" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 600)
+
+[node name="Sprite2D201" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 600)
+
+[node name="Sprite2D202" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 600)
+
+[node name="Sprite2D203" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 600)
+
+[node name="Sprite2D204" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 600)
+
+[node name="Sprite2D205" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 600)
+
+[node name="Sprite2D206" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 600)
+
+[node name="Sprite2D207" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 600)
+
+[node name="Sprite2D208" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 600)
+
+[node name="Sprite2D209" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 600)
+
+[node name="Sprite2D210" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 600)
+
+[node name="Sprite2D211" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 600)
+
+[node name="Sprite2D212" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 600)
+
+[node name="Sprite2D213" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 600)
+
+[node name="Sprite2D214" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 600)
+
+[node name="Sprite2D215" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 600)
+
+[node name="Sprite2D216" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 600)
+
+[node name="Sprite2D217" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 600)
+
+[node name="Sprite2D218" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 536)
+
+[node name="Sprite2D219" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 536)
+
+[node name="Sprite2D220" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 536)
+
+[node name="Sprite2D221" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 536)
+
+[node name="Sprite2D222" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 536)
+
+[node name="Sprite2D223" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 536)
+
+[node name="Sprite2D224" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 536)
+
+[node name="Sprite2D225" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 536)
+
+[node name="Sprite2D226" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 536)
+
+[node name="Sprite2D227" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 536)
+
+[node name="Sprite2D228" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 536)
+
+[node name="Sprite2D229" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 536)
+
+[node name="Sprite2D230" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 536)
+
+[node name="Sprite2D231" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 536)
+
+[node name="Sprite2D232" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 536)
+
+[node name="Sprite2D233" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 536)
+
+[node name="Sprite2D234" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 536)
+
+[node name="Sprite2D235" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 536)
+
+[node name="Sprite2D236" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 536)
+
+[node name="Sprite2D237" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 536)
+
+[node name="Sprite2D238" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 536)
+
+[node name="Sprite2D239" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 536)
+
+[node name="Sprite2D240" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 536)
+
+[node name="Sprite2D241" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 536)
+
+[node name="Sprite2D242" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 536)
+
+[node name="Sprite2D243" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 536)
+
+[node name="Sprite2D244" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 536)
+
+[node name="Sprite2D245" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 536)
+
+[node name="Sprite2D246" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 536)
+
+[node name="Sprite2D247" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 536)
+
+[node name="Sprite2D248" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 536)
+
+[node name="Sprite2D249" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 472)
+
+[node name="Sprite2D250" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 472)
+
+[node name="Sprite2D251" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 472)
+
+[node name="Sprite2D252" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 472)
+
+[node name="Sprite2D253" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 472)
+
+[node name="Sprite2D254" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 472)
+
+[node name="Sprite2D255" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 472)
+
+[node name="Sprite2D256" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 472)
+
+[node name="Sprite2D257" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 472)
+
+[node name="Sprite2D258" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 472)
+
+[node name="Sprite2D259" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 472)
+
+[node name="Sprite2D260" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 472)
+
+[node name="Sprite2D261" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 472)
+
+[node name="Sprite2D262" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 472)
+
+[node name="Sprite2D263" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 472)
+
+[node name="Sprite2D264" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 472)
+
+[node name="Sprite2D265" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 472)
+
+[node name="Sprite2D266" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 472)
+
+[node name="Sprite2D267" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 472)
+
+[node name="Sprite2D268" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 472)
+
+[node name="Sprite2D269" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 472)
+
+[node name="Sprite2D270" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 472)
+
+[node name="Sprite2D271" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 472)
+
+[node name="Sprite2D272" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 472)
+
+[node name="Sprite2D273" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 472)
+
+[node name="Sprite2D274" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 472)
+
+[node name="Sprite2D275" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 472)
+
+[node name="Sprite2D276" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 472)
+
+[node name="Sprite2D277" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 472)
+
+[node name="Sprite2D278" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 472)
+
+[node name="Sprite2D279" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 472)
+
+[node name="Sprite2D280" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 408)
+
+[node name="Sprite2D281" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 408)
+
+[node name="Sprite2D282" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 408)
+
+[node name="Sprite2D283" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 408)
+
+[node name="Sprite2D284" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 408)
+
+[node name="Sprite2D285" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 408)
+
+[node name="Sprite2D286" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 408)
+
+[node name="Sprite2D287" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 408)
+
+[node name="Sprite2D288" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 408)
+
+[node name="Sprite2D289" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 408)
+
+[node name="Sprite2D290" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 408)
+
+[node name="Sprite2D291" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 408)
+
+[node name="Sprite2D292" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 408)
+
+[node name="Sprite2D293" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 408)
+
+[node name="Sprite2D294" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 408)
+
+[node name="Sprite2D295" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 408)
+
+[node name="Sprite2D296" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 408)
+
+[node name="Sprite2D297" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 408)
+
+[node name="Sprite2D298" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 408)
+
+[node name="Sprite2D299" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 408)
+
+[node name="Sprite2D300" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 408)
+
+[node name="Sprite2D301" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 408)
+
+[node name="Sprite2D302" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 408)
+
+[node name="Sprite2D303" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 408)
+
+[node name="Sprite2D304" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 408)
+
+[node name="Sprite2D305" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 408)
+
+[node name="Sprite2D306" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 408)
+
+[node name="Sprite2D307" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 408)
+
+[node name="Sprite2D308" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 408)
+
+[node name="Sprite2D309" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 408)
+
+[node name="Sprite2D310" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 408)
+
+[node name="Sprite2D311" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 344)
+
+[node name="Sprite2D312" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 344)
+
+[node name="Sprite2D313" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 344)
+
+[node name="Sprite2D314" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 344)
+
+[node name="Sprite2D315" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 344)
+
+[node name="Sprite2D316" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 344)
+
+[node name="Sprite2D317" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 344)
+
+[node name="Sprite2D318" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 344)
+
+[node name="Sprite2D319" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 344)
+
+[node name="Sprite2D320" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 344)
+
+[node name="Sprite2D321" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 344)
+
+[node name="Sprite2D322" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 344)
+
+[node name="Sprite2D323" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 344)
+
+[node name="Sprite2D324" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 344)
+
+[node name="Sprite2D325" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 344)
+
+[node name="Sprite2D326" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 344)
+
+[node name="Sprite2D327" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 344)
+
+[node name="Sprite2D328" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 344)
+
+[node name="Sprite2D329" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 344)
+
+[node name="Sprite2D330" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 344)
+
+[node name="Sprite2D331" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 344)
+
+[node name="Sprite2D332" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 344)
+
+[node name="Sprite2D333" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 344)
+
+[node name="Sprite2D334" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 344)
+
+[node name="Sprite2D335" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 344)
+
+[node name="Sprite2D336" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 344)
+
+[node name="Sprite2D337" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 344)
+
+[node name="Sprite2D338" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 344)
+
+[node name="Sprite2D339" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 344)
+
+[node name="Sprite2D340" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 344)
+
+[node name="Sprite2D341" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 344)
+
+[node name="Sprite2D342" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 280)
+
+[node name="Sprite2D343" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 280)
+
+[node name="Sprite2D344" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 280)
+
+[node name="Sprite2D345" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 280)
+
+[node name="Sprite2D346" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 280)
+
+[node name="Sprite2D347" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 280)
+
+[node name="Sprite2D348" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 280)
+
+[node name="Sprite2D349" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 280)
+
+[node name="Sprite2D350" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 280)
+
+[node name="Sprite2D351" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 280)
+
+[node name="Sprite2D352" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 280)
+
+[node name="Sprite2D353" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 280)
+
+[node name="Sprite2D354" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 280)
+
+[node name="Sprite2D355" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 280)
+
+[node name="Sprite2D356" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 280)
+
+[node name="Sprite2D357" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 280)
+
+[node name="Sprite2D358" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 280)
+
+[node name="Sprite2D359" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 280)
+
+[node name="Sprite2D360" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 280)
+
+[node name="Sprite2D361" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 280)
+
+[node name="Sprite2D362" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 280)
+
+[node name="Sprite2D363" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 280)
+
+[node name="Sprite2D364" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 280)
+
+[node name="Sprite2D365" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 280)
+
+[node name="Sprite2D366" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 280)
+
+[node name="Sprite2D367" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 280)
+
+[node name="Sprite2D368" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 280)
+
+[node name="Sprite2D369" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 280)
+
+[node name="Sprite2D370" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 280)
+
+[node name="Sprite2D371" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 280)
+
+[node name="Sprite2D372" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 280)
+
+[node name="Sprite2D373" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 216)
+
+[node name="Sprite2D374" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 216)
+
+[node name="Sprite2D375" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 216)
+
+[node name="Sprite2D376" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 216)
+
+[node name="Sprite2D377" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 216)
+
+[node name="Sprite2D378" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 216)
+
+[node name="Sprite2D379" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 216)
+
+[node name="Sprite2D380" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 216)
+
+[node name="Sprite2D381" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 216)
+
+[node name="Sprite2D382" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 216)
+
+[node name="Sprite2D383" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 216)
+
+[node name="Sprite2D384" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 216)
+
+[node name="Sprite2D385" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 216)
+
+[node name="Sprite2D386" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 216)
+
+[node name="Sprite2D387" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 216)
+
+[node name="Sprite2D388" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 216)
+
+[node name="Sprite2D389" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 216)
+
+[node name="Sprite2D390" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 216)
+
+[node name="Sprite2D391" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 216)
+
+[node name="Sprite2D392" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 216)
+
+[node name="Sprite2D393" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 216)
+
+[node name="Sprite2D394" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 216)
+
+[node name="Sprite2D395" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 216)
+
+[node name="Sprite2D396" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 216)
+
+[node name="Sprite2D397" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 216)
+
+[node name="Sprite2D398" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 216)
+
+[node name="Sprite2D399" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 216)
+
+[node name="Sprite2D400" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 216)
+
+[node name="Sprite2D401" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 216)
+
+[node name="Sprite2D402" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 216)
+
+[node name="Sprite2D403" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 216)
+
+[node name="Sprite2D404" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 152)
+
+[node name="Sprite2D405" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 152)
+
+[node name="Sprite2D406" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 152)
+
+[node name="Sprite2D407" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 152)
+
+[node name="Sprite2D408" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 152)
+
+[node name="Sprite2D409" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 152)
+
+[node name="Sprite2D410" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 152)
+
+[node name="Sprite2D411" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 152)
+
+[node name="Sprite2D412" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 152)
+
+[node name="Sprite2D413" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 152)
+
+[node name="Sprite2D414" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 152)
+
+[node name="Sprite2D415" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 152)
+
+[node name="Sprite2D416" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 152)
+
+[node name="Sprite2D417" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 152)
+
+[node name="Sprite2D418" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 152)
+
+[node name="Sprite2D419" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 152)
+
+[node name="Sprite2D420" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 152)
+
+[node name="Sprite2D421" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 152)
+
+[node name="Sprite2D422" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 152)
+
+[node name="Sprite2D423" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 152)
+
+[node name="Sprite2D424" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 152)
+
+[node name="Sprite2D425" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 152)
+
+[node name="Sprite2D426" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 152)
+
+[node name="Sprite2D427" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 152)
+
+[node name="Sprite2D428" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 152)
+
+[node name="Sprite2D429" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 152)
+
+[node name="Sprite2D430" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 152)
+
+[node name="Sprite2D431" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 152)
+
+[node name="Sprite2D432" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 152)
+
+[node name="Sprite2D433" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 152)
+
+[node name="Sprite2D434" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 152)
+
+[node name="Sprite2D435" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 88)
+
+[node name="Sprite2D558" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 24)
+
+[node name="Sprite2D436" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 88)
+
+[node name="Sprite2D437" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 88)
+
+[node name="Sprite2D438" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 88)
+
+[node name="Sprite2D439" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 88)
+
+[node name="Sprite2D440" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 88)
+
+[node name="Sprite2D441" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 88)
+
+[node name="Sprite2D540" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 984)
+
+[node name="Sprite2D541" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 920)
+
+[node name="Sprite2D542" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 856)
+
+[node name="Sprite2D543" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 792)
+
+[node name="Sprite2D544" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 728)
+
+[node name="Sprite2D545" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 664)
+
+[node name="Sprite2D546" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 600)
+
+[node name="Sprite2D547" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 536)
+
+[node name="Sprite2D548" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 472)
+
+[node name="Sprite2D549" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 408)
+
+[node name="Sprite2D550" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 344)
+
+[node name="Sprite2D551" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 280)
+
+[node name="Sprite2D552" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 216)
+
+[node name="Sprite2D553" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 152)
+
+[node name="Sprite2D554" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 88)
+
+[node name="Sprite2D525" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 984)
+
+[node name="Sprite2D526" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 920)
+
+[node name="Sprite2D527" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 856)
+
+[node name="Sprite2D528" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 792)
+
+[node name="Sprite2D529" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 728)
+
+[node name="Sprite2D530" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 664)
+
+[node name="Sprite2D531" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 600)
+
+[node name="Sprite2D532" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 536)
+
+[node name="Sprite2D533" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 472)
+
+[node name="Sprite2D534" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 408)
+
+[node name="Sprite2D535" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 344)
+
+[node name="Sprite2D536" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 280)
+
+[node name="Sprite2D537" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 216)
+
+[node name="Sprite2D538" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 152)
+
+[node name="Sprite2D539" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(32, 88)
+
+[node name="Sprite2D442" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 88)
+
+[node name="Sprite2D443" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 88)
+
+[node name="Sprite2D444" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 88)
+
+[node name="Sprite2D445" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 88)
+
+[node name="Sprite2D446" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 88)
+
+[node name="Sprite2D447" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 88)
+
+[node name="Sprite2D448" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 88)
+
+[node name="Sprite2D449" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 88)
+
+[node name="Sprite2D450" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 88)
+
+[node name="Sprite2D451" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 88)
+
+[node name="Sprite2D452" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 88)
+
+[node name="Sprite2D453" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 88)
+
+[node name="Sprite2D454" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 88)
+
+[node name="Sprite2D455" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 88)
+
+[node name="Sprite2D456" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 88)
+
+[node name="Sprite2D457" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 88)
+
+[node name="Sprite2D458" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 88)
+
+[node name="Sprite2D459" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 88)
+
+[node name="Sprite2D460" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 88)
+
+[node name="Sprite2D461" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 88)
+
+[node name="Sprite2D462" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 88)
+
+[node name="Sprite2D463" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 88)
+
+[node name="Sprite2D464" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 88)
+
+[node name="Sprite2D465" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 88)
+
+[node name="Sprite2D555" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1888, 24)
+
+[node name="Sprite2D497" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 1048)
+
+[node name="Sprite2D498" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 1048)
+
+[node name="Sprite2D499" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 1048)
+
+[node name="Sprite2D500" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 1048)
+
+[node name="Sprite2D501" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 1048)
+
+[node name="Sprite2D502" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 1048)
+
+[node name="Sprite2D503" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 1048)
+
+[node name="Sprite2D504" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 1048)
+
+[node name="Sprite2D505" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 1048)
+
+[node name="Sprite2D506" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 1048)
+
+[node name="Sprite2D507" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 1048)
+
+[node name="Sprite2D508" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 1048)
+
+[node name="Sprite2D509" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 1048)
+
+[node name="Sprite2D510" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 1048)
+
+[node name="Sprite2D511" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 1048)
+
+[node name="Sprite2D512" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 1048)
+
+[node name="Sprite2D513" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 1048)
+
+[node name="Sprite2D514" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 1048)
+
+[node name="Sprite2D515" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 1048)
+
+[node name="Sprite2D516" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 1048)
+
+[node name="Sprite2D517" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 1048)
+
+[node name="Sprite2D518" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 1048)
+
+[node name="Sprite2D519" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 1048)
+
+[node name="Sprite2D520" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 1048)
+
+[node name="Sprite2D521" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 1048)
+
+[node name="Sprite2D522" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 1048)
+
+[node name="Sprite2D523" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 1048)
+
+[node name="Sprite2D524" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 1048)
+
+[node name="Sprite2D466" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(96, 24)
+
+[node name="Sprite2D467" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(160, 24)
+
+[node name="Sprite2D468" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(224, 24)
+
+[node name="Sprite2D469" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(288, 24)
+
+[node name="Sprite2D470" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(352, 24)
+
+[node name="Sprite2D471" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(416, 24)
+
+[node name="Sprite2D472" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(480, 24)
+
+[node name="Sprite2D473" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(544, 24)
+
+[node name="Sprite2D474" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(608, 24)
+
+[node name="Sprite2D475" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(672, 24)
+
+[node name="Sprite2D476" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(736, 24)
+
+[node name="Sprite2D477" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(800, 24)
+
+[node name="Sprite2D478" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(864, 24)
+
+[node name="Sprite2D479" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(928, 24)
+
+[node name="Sprite2D480" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(992, 24)
+
+[node name="Sprite2D481" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1056, 24)
+
+[node name="Sprite2D482" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1120, 24)
+
+[node name="Sprite2D483" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1184, 24)
+
+[node name="Sprite2D484" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1248, 24)
+
+[node name="Sprite2D485" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1312, 24)
+
+[node name="Sprite2D486" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1376, 24)
+
+[node name="Sprite2D487" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1440, 24)
+
+[node name="Sprite2D488" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1504, 24)
+
+[node name="Sprite2D489" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1568, 24)
+
+[node name="Sprite2D490" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 24)
+
+[node name="Sprite2D491" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 24)
+
+[node name="Sprite2D492" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 24)
+
+[node name="Sprite2D493" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1632, 24)
+
+[node name="Sprite2D494" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1696, 24)
+
+[node name="Sprite2D495" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1760, 24)
+
+[node name="Sprite2D496" parent="BackgroundTiles" instance=ExtResource("2_dd0xh")]
+position = Vector2(1824, 24)
+
+[node name="Tiles" type="Node2D" parent="."]
+
+[node name="Tile" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 1048)
+
+[node name="Tile31" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 984)
+
+[node name="Tile32" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 920)
+
+[node name="Tile35" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 856)
+
+[node name="Tile36" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 792)
+
+[node name="Tile37" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 728)
+
+[node name="Tile97" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(432, 760)
+
+[node name="Tile92" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(368, 864)
+
+[node name="Tile93" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(432, 864)
+
+[node name="Tile95" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(432, 696)
+
+[node name="Tile96" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 880)
+
+[node name="Tile107" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 944)
+
+[node name="Tile98" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 816)
+
+[node name="Tile99" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 752)
+
+[node name="Tile100" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 688)
+
+[node name="Tile101" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 624)
+
+[node name="Tile104" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 560)
+
+[node name="Tile106" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 560)
+
+[node name="Tile94" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(496, 864)
+
+[node name="Tile102" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(872, 704)
+
+[node name="Tile103" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(936, 704)
+
+[node name="Tile105" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1000, 704)
+
+[node name="Tile111" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(968, 600)
+
+[node name="Tile110" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(968, 536)
+
+[node name="Tile112" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 416)
+
+[node name="Tile114" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 472)
+
+[node name="Tile115" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 352)
+
+[node name="Tile131" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 352)
+
+[node name="Tile134" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(352, 352)
+
+[node name="Tile113" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(544, 352)
+
+[node name="Tile109" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1064, 704)
+
+[node name="Tile132" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1248, 864)
+
+[node name="Tile133" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1312, 864)
+
+[node name="Tile116" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1504, 392)
+
+[node name="Tile117" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1440, 560)
+
+[node name="Tile121" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1120, 296)
+
+[node name="Tile122" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1056, 296)
+
+[node name="Tile123" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(992, 296)
+
+[node name="Tile124" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(928, 296)
+
+[node name="Tile125" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(864, 296)
+
+[node name="Tile128" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(800, 296)
+
+[node name="Tile129" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(736, 296)
+
+[node name="Tile126" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(928, 192)
+
+[node name="Tile127" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(928, 128)
+
+[node name="Tile118" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1504, 560)
+
+[node name="Tile119" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1504, 328)
+
+[node name="Tile130" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1440, 328)
+
+[node name="Tile120" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1568, 560)
+
+[node name="Tile38" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 664)
+
+[node name="Tile39" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 600)
+
+[node name="Tile40" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 536)
+
+[node name="Tile41" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 472)
+
+[node name="Tile42" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 408)
+
+[node name="Tile43" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 344)
+
+[node name="Tile44" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 280)
+
+[node name="Tile45" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 216)
+
+[node name="Tile46" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 152)
+
+[node name="Tile47" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 88)
+
+[node name="Tile48" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(32, 24)
+
+[node name="Tile17" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1056, 1048)
+
+[node name="Tile49" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 856)
+
+[node name="Tile50" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 792)
+
+[node name="Tile51" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 728)
+
+[node name="Tile52" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 664)
+
+[node name="Tile53" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 600)
+
+[node name="Tile54" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 536)
+
+[node name="Tile55" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 472)
+
+[node name="Tile56" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 408)
+
+[node name="Tile57" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 344)
+
+[node name="Tile58" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 280)
+
+[node name="Tile59" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 216)
+
+[node name="Tile60" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 152)
+
+[node name="Tile61" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 88)
+
+[node name="Tile62" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 24)
+
+[node name="Tile18" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1120, 1048)
+
+[node name="Tile19" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1184, 1048)
+
+[node name="Tile20" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1248, 1048)
+
+[node name="Tile2" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(96, 1048)
+
+[node name="Tile3" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(160, 1048)
+
+[node name="Tile4" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(224, 1048)
+
+[node name="Tile5" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 1048)
+
+[node name="Tile6" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(352, 1048)
+
+[node name="Tile7" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(416, 1048)
+
+[node name="Tile8" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(480, 1048)
+
+[node name="Tile9" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(544, 1048)
+
+[node name="Tile10" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(608, 1048)
+
+[node name="Tile11" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(672, 1048)
+
+[node name="Tile12" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(736, 1048)
+
+[node name="Tile13" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(800, 1048)
+
+[node name="Tile14" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(864, 1048)
+
+[node name="Tile15" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(928, 1048)
+
+[node name="Tile16" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(992, 1048)
+
+[node name="Tile21" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 1048)
+
+[node name="Tile22" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1696, 1048)
+
+[node name="Tile23" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1760, 1048)
+
+[node name="Tile24" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1824, 1048)
+
+[node name="Tile64" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(96, 24)
+
+[node name="Tile65" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(160, 24)
+
+[node name="Tile66" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(224, 24)
+
+[node name="Tile67" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(288, 24)
+
+[node name="Tile68" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(352, 24)
+
+[node name="Tile69" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(416, 24)
+
+[node name="Tile70" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(480, 24)
+
+[node name="Tile71" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(544, 24)
+
+[node name="Tile72" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(608, 24)
+
+[node name="Tile73" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(672, 24)
+
+[node name="Tile74" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(736, 24)
+
+[node name="Tile75" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(800, 24)
+
+[node name="Tile76" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(864, 24)
+
+[node name="Tile77" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(928, 24)
+
+[node name="Tile78" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(992, 24)
+
+[node name="Tile83" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1056, 24)
+
+[node name="Tile84" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1120, 24)
+
+[node name="Tile85" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1184, 24)
+
+[node name="Tile86" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1248, 24)
+
+[node name="Tile87" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1312, 24)
+
+[node name="Tile88" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1376, 24)
+
+[node name="Tile89" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1440, 24)
+
+[node name="Tile90" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1504, 24)
+
+[node name="Tile91" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1568, 24)
+
+[node name="Tile79" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1632, 24)
+
+[node name="Tile80" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1696, 24)
+
+[node name="Tile81" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1760, 24)
+
+[node name="Tile82" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1824, 24)
+
+[node name="Tile30" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 1048)
+
+[node name="Tile33" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 984)
+
+[node name="Tile34" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1888, 920)
+
+[node name="Tile25" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1312, 1048)
+
+[node name="Tile26" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1376, 1048)
+
+[node name="Tile27" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1440, 1048)
+
+[node name="Tile28" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1504, 1048)
+
+[node name="Tile29" parent="Tiles" instance=ExtResource("2_7nebs")]
+position = Vector2(1568, 1048)
+
+[node name="SpawnPoints" type="Node2D" parent="."]
+script = ExtResource("3_y1sl6")
+
+[node name="1" type="Node2D" parent="SpawnPoints"]
+position = Vector2(408, 944)
+
+[node name="2" type="Node2D" parent="SpawnPoints"]
+position = Vector2(1496, 944)
+
+[node name="LevelTimer" type="Timer" parent="."]
+one_shot = true
+
+[node name="LevelTimerLabel" type="Label" parent="LevelTimer"]
+visible = false
+offset_left = 640.0
+offset_top = 63.0
+offset_right = 1280.0
+offset_bottom = 256.0
+theme_override_fonts/font = ExtResource("4_w3fw5")
+theme_override_font_sizes/font_size = 141
+text = "20"
+horizontal_alignment = 1
+vertical_alignment = 1
+metadata/_edit_use_anchors_ = true
+
+[node name="ScoreColorRect" type="ColorRect" parent="."]
+offset_right = 1920.0
+offset_bottom = 1080.0
+color = Color(0.0467733, 5.10366e-05, 0.150638, 0.380392)
+
+[node name="MatchPointLabel" type="Label" parent="ScoreColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -520.0
+offset_top = 120.0
+offset_right = 518.0
+offset_bottom = 359.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_w3fw5")
+theme_override_font_sizes/font_size = 150
+text = "MATCH POINT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="GamePointLabel" type="Label" parent="ScoreColorRect"]
+visible = false
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -520.0
+offset_top = 120.0
+offset_right = 518.0
+offset_bottom = 359.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("4_w3fw5")
+theme_override_font_sizes/font_size = 150
+text = "GAME POINT"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreLabel" type="Label" parent="ScoreColorRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -304.0
+offset_top = -204.0
+offset_right = 304.0
+offset_bottom = 57.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_w3fw5")
+theme_override_font_sizes/font_size = 191
+text = "0 - 0"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="ScoreTimer" type="Timer" parent="ScoreColorRect"]
+one_shot = true
+
+[node name="ScoreTimerLabel" type="Label" parent="ScoreColorRect/ScoreTimer"]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -40.0
+offset_top = 28.0
+offset_right = 40.0
+offset_bottom = 208.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("4_w3fw5")
+theme_override_font_sizes/font_size = 131
+text = "3"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="timeout" from="LevelTimer" to="." method="_on_level_timer_timeout"]
+[connection signal="timeout" from="ScoreColorRect/ScoreTimer" to="." method="_on_score_timer_timeout"]

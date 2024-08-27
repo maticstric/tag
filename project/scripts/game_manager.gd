@@ -11,6 +11,8 @@ var current_it
 var curr_level = 0
 var all_levels_seen = false
 
+var muted = false
+
 var p1_score = 0
 var p2_score = 0
 

@@ -1,9 +1,10 @@
-[gd_scene load_steps=5 format=3 uid="uid://bcame3mt8l0yd"]
+[gd_scene load_steps=6 format=3 uid="uid://bcame3mt8l0yd"]
 
 [ext_resource type="Script" path="res://project/scripts/main_menu.gd" id="1_uulie"]
 [ext_resource type="FontFile" uid="uid://22bgq02otxnp" path="res://project/res/fonts/BigSpace-rPKx.ttf" id="2_8dn12"]
 [ext_resource type="Theme" uid="uid://7t1d74qobego" path="res://project/res/new_theme.tres" id="2_i88a4"]
 [ext_resource type="PackedScene" uid="uid://bvbl8fmljnq00" path="res://project/scenes/background_tile.tscn" id="2_opwyf"]
+[ext_resource type="Texture2D" uid="uid://dn3hkacdh407g" path="res://project/res/volumeon.png" id="5_ralw4"]
 
 [node name="MainMenu" type="Control"]
 layout_mode = 3
@@ -1728,4 +1729,24 @@ text = "TAG"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="MuteButton" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -120.0
+offset_right = -120.0
+offset_bottom = -112.0
+grow_horizontal = 0
+grow_vertical = 0
+theme = ExtResource("2_i88a4")
+theme_override_colors/icon_normal_color = Color(0.960784, 0.627451, 0.592157, 1)
+theme_override_colors/icon_pressed_color = Color(0.960784, 0.627451, 0.592157, 1)
+theme_override_colors/icon_hover_color = Color(0.737255, 0.290196, 0.607843, 1)
+icon = ExtResource("5_ralw4")
+
 [connection signal="pressed" from="PlayButton" to="." method="_on_play_button_pressed"]
+[connection signal="pressed" from="MuteButton" to="." method="_on_mute_button_pressed"]

@@ -10,3 +10,12 @@ func _process(_delta):
 
 func _on_play_button_pressed():
 	GameManager.start_game()
+
+
+func _on_mute_button_pressed():
+	if !GameManager.muted:
+		$MuteButton.icon = load("res://project/res/volumeoff.png")
+	else:
+		$MuteButton.icon = load("res://project/res/volumeon.png")
+		
+	GameManager.muted = !GameManager.muted
